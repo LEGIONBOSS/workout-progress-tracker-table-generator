@@ -46,7 +46,7 @@ namespace ConsoleApp2
                         + $"<h3>{repeatingStrings[number]}</h3>";
                     }
 
-                    result += $"<td>{cell_content}</td>";
+                    result += $"<td>{cell_content}</td>\n";
                 }
                 result += "</tr>\n";
             }
