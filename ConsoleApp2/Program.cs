@@ -52,7 +52,7 @@ namespace ConsoleApp2
             }
 
             result += "</table>\n</body>\n</html>";
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\result.html", result);
+            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\workout_table.html", result);
             #endregion
         }
     }
