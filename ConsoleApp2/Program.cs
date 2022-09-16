@@ -7,9 +7,9 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int cells = 30;
-            string[] repeatingStrings = { "Arms & Back", "Legs", "Abs & Core"};
             int columns = 5;
+            int cells = 14;
+            string[] repeatingStrings = { "Upper Body", "Lower Body", "Abs" };
 
             #region Generator
             string result = @"
