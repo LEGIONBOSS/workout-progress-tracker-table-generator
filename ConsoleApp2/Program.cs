@@ -7,9 +7,9 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            int collumns = 5;
             int cells = 30;
             string[] repeatingStrings = { "Arms & Back", "Legs", "Abs & Core"};
+            int columns = 5;
 
             #region Generator
             string result = @"
@@ -31,14 +31,14 @@ namespace ConsoleApp2
                 <body>
                 <table>
                 ";
-            int rows = (int)Math.Ceiling((double)cells / (double)collumns);
+            int rows = (int)Math.Ceiling((double)cells / (double)columns);
             for (int i = 0; i < rows; i++)
             {
                 result += "<tr>\n";
-                for (int j = 0; j < collumns; j++)
+                for (int j = 0; j < columns; j++)
                 {
                     string cell_content = "";
-                    int cell_num = i * collumns + (j + 1);
+                    int cell_num = i * columns + (j + 1);
                     if (cell_num <= cells)
                     {
                         int number = cell_num - (int)Math.Floor((double)(cell_num - 1) / repeatingStrings.Length) * repeatingStrings.Length - 1;
