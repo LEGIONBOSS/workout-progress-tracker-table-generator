@@ -10,6 +10,7 @@ namespace ConsoleApp2
             int columns = 5;
             int cells = 14;
             string[] repeatingStrings = { "Upper Body", "Lower Body", "Abs" };
+            string fileName = "workout_table";
 
             #region Generator
             string result = @"
@@ -52,7 +53,7 @@ namespace ConsoleApp2
             }
 
             result += "</table>\n</body>\n</html>";
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\workout_table.html", result);
+            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + $"\\{fileName}.html", result);
             #endregion
         }
     }
