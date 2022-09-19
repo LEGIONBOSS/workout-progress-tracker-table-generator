@@ -54,6 +54,8 @@ namespace ConsoleApp2
 
             result += "</table>\n</body>\n</html>";
             File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + $"\\{fileName}.html", result);
+            Console.WriteLine($"{fileName}.html has been saved to the Desktop...");
+            Console.ReadLine();
             #endregion
         }
     }
