@@ -10,12 +10,16 @@ At the beginning of the source file `Program.cs` a few parameters can be set to 
 int columns = 5;
 int cells = 14;
 string[] repeatingStrings = { "Upper Body", "Lower Body", "Abs"};
+string fileName = "workout_table";
 ```
 
  - `columns` to set the number of columns of the result table
  - `cells` to set the number of cells of the result table
  - `repeatingStrings` to set the repeated workout titles in the table cells
+ - `fileName` to set the name of the result HTML file
 
 The above parameters would generate the following table:
+
+`workout_table.html`
 
 ![example table](/img/example.png)
